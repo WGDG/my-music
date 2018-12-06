@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "f-like": "../../components/like/like"
+    "f-like": "../../components/like/like",
+    "f-date": "../../components/date/date",
+    "f-share": "../../components/share/index"
   }
 }

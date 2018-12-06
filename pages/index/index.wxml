@@ -1,7 +1,12 @@
 <!--pages/index/index.wxml-->
 <view class='index'>
   <view class='header'>
+      <f-date index="{{Indexheader.index}}" />
+      <view class='header-right'>
       <f-like bind:like="onlike" count="{{ Indexheader.fav_nums }}" like="{{ Indexheader.like_status }}"/>
+      <f-share />
+      </view>
+      
   </view>
 </view>
 

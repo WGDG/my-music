@@ -1,0 +1,9 @@
+<!--components/date/date.wxml-->
+<view class='date'>
+  <text class='No'>No.</text>
+  <text class='journal'>{{_index}}</text>
+  <view class='days'>
+    <view class='mouths'>{{month}}</view>
+    <view class='years'>{{years}}</view>
+  </view>
+</view>
