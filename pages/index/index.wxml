@@ -1,7 +1,5 @@
 <!--pages/index/index.wxml-->
 <view class='box'>
-
-
   <view class='index'>
     <view class='header'>
       <f-date index="{{Indexheader.index}}" />
@@ -23,5 +21,4 @@
   <view class="footer">
     <f-footer />
   </view>
-
 </view>
