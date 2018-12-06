@@ -17,13 +17,21 @@ Page({
    */
   onLoad: function (options) {
     indexModel.getDataLatest(res => {
-       console.log(res)
+      //  console.log(res)
       this.setData({
         Indexheader: res,
       })
       if (this.data.Indexheader.type = 100) {
         this.setData({
           titles: '电影'
+        })
+      } else if (this.data.Indexheader.type = 200){
+        this.setData({
+          titles: '音乐'
+        })
+      } else if (this.data.Indexheader.type = 300) {
+        this.setData({
+          titles: '句子'
         })
       }
         
