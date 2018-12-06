@@ -1,5 +1,16 @@
 /* components/like/lik e.wxss */
-image{
+.like{
+  position: relative;
+  width: 75rpx;
+}
+.like-image{
   width: 32rpx;
   height: 28rpx;
+}
+.like-nums{
+  font-size: 15rpx;
+  color: #c4c4c4;
+  position: absolute;
+  top: 0;
+  left: 35rpx;
 }

@@ -8,7 +8,6 @@ const tips = {
 // 请求类
 class HTTP {
   request(params) {
-    params.page=params.page||1
     if (!params.method) {
       params.method = 'GET' // 如果没传默认GET
     }
@@ -16,7 +15,6 @@ class HTTP {
       url: config.api_base_url + params.url,
       method: params.method,
       data: params.data,
-      page: params.page,
       header: {
         'content-type': 'application/json',
         'appkey': config.appKey
@@ -24,7 +22,7 @@ class HTTP {
       success: (res) => { // 成功
         let code = res.statusCode.toString()
         if (code.startsWith('2')) {
-          params.success(res.data)
+          params.success && params.success(res.data)
         } else {
           let error_code = res.data.error_code
           this._show_error(error_code)

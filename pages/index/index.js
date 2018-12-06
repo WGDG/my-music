@@ -1,18 +1,27 @@
 // pages/index/index.js
+import { IndexModel } from '../../models/index/index.js'
+import { LikeModel } from '../../models/like.js'
+let indexModel = new IndexModel()
+let likeModel = new LikeModel()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    Indexheader: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    indexModel.getDataLatest(res => {
+      console.log(res)
+      this.setData({
+        Indexheader: res
+      })
+    })
   },
 
   /**
@@ -62,5 +71,10 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onlike (ev) {
+    let { behavior } = ev.detail
+    let { id, type } = this.data.Indexheader
+    likeModel.like(behavior, id, type)
   }
 })

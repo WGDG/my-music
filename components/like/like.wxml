@@ -1,4 +1,5 @@
 <!--components/like/lik e.wxml-->
-<view class='like'>
-  <image src='images/xin.png' />
+<view class='like' bindtap='onlike'>
+  <image src='{{like ? yeslike : nolike}}' class='like-image' />
+  <text class='like-nums'>{{ count }}</text>
 </view>

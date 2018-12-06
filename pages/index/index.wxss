@@ -1,1 +1,13 @@
 /* pages/index/index.wxss */
+.index{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  width: 100%;
+  height: 102rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
