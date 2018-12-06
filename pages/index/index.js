@@ -29,11 +29,7 @@ Page({
         this.setData({
           titles: '音乐'
         })
-      } else if (this.data.Indexheader.type = 300) {
-        this.setData({
-          titles: '句子'
-        })
-      }
+      } 
         
     })
       
