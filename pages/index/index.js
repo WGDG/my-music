@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    Indexheader: []
+    Indexheader: [],
   },
 
   /**
@@ -17,11 +17,18 @@ Page({
    */
   onLoad: function (options) {
     indexModel.getDataLatest(res => {
-      console.log(res)
+       console.log(res)
       this.setData({
-        Indexheader: res
+        Indexheader: res,
       })
+      if (this.data.Indexheader.type = 100) {
+        this.setData({
+          titles: '电影'
+        })
+      }
+        
     })
+      
   },
 
   /**

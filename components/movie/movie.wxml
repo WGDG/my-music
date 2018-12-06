@@ -1,0 +1,4 @@
+<!--components/movie/movie.wxml-->
+<view class="movie">
+  <image class="movie-banner" src="{{ banner }}"></image>
+</view>

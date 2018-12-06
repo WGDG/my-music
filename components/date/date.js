@@ -7,9 +7,9 @@ Component({
     index: {
       type: Number,
       observer(newVal, oldVel, changedPath) {
-          console.log(newVal)
-          console.log(oldVel)
-          console.log(changedPath)
+          // console.log(newVal)
+          // console.log(oldVel)
+          // console.log(changedPath)
           let val = newVal < '10' ? '0' + newVal : newVal
           this.setData({
             _index: val

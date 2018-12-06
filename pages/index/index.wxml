@@ -3,10 +3,18 @@
   <view class='header'>
       <f-date index="{{Indexheader.index}}" />
       <view class='header-right'>
-      <f-like bind:like="onlike" count="{{ Indexheader.fav_nums }}" like="{{ Indexheader.like_status }}"/>
-      <f-share />
+        <f-like bind:like="onlike" count="{{ Indexheader.fav_nums }}" like="{{ Indexheader.like_status }}"/>
+        <f-share />
       </view>
-      
   </view>
-</view>
+  <view class="banner">
+    <f-movie banner="{{Indexheader.image}}"/>
+  </view>
+  <view class="content">
+    <text class="type">{{ titles}} </text>
+    <f-content content="{{ Indexheader.content }}。"/>
+  </view>
+  
+  
 
+</view>

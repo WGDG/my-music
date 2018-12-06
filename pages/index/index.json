@@ -2,6 +2,8 @@
   "usingComponents": {
     "f-like": "../../components/like/like",
     "f-date": "../../components/date/date",
-    "f-share": "../../components/share/index"
+    "f-share": "../../components/share/index",
+    "f-movie": "../../components/movie/movie",
+    "f-content": "../../components/content/content"
   }
 }

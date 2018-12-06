@@ -8,7 +8,8 @@
   height: 28rpx;
 }
 .like-nums{
-  font-size: 15rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
   color: #c4c4c4;
   position: absolute;
   top: 0;
