@@ -1,0 +1,46 @@
+/* pages/index/index.wxss */
+.index{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  width: 100%;
+  height: 107rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-right{
+  width: 145rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content{
+  position:relative;
+}
+
+.type{
+  font-weight:100;
+  font-size: 68rpx;
+  line-height: 68rpx;
+  flex-direction: column;
+  display:flex;
+  padding-left:30rpx;
+ 
+}
+.dian{
+  position:absolute;
+  color:#fff;
+  top:-95rpx;
+}
+.ying{
+  color:#333333;
+}
+.line{
+  position:absolute;
+  left:75rpx;
+  top:35rpx;
+}

@@ -1,0 +1,26 @@
+/* components/date/date.wxss */
+
+.date{
+  width: 200rpx;
+  box-sizing: border-box;
+}
+.No {
+  font-size: 24rpx;
+}
+.journal{
+  font-size: 52rpx;
+  font-weight: bold;
+}
+.days{
+  padding-left: 15rpx;
+  margin-left: 15rpx;
+  border-left: 4rpx solid #000;
+  display: inline-block;
+  text-align: center
+}
+.mouths{
+  font-size: 20rpx;
+}
+.years {
+  font-size: 17rpx;
+}

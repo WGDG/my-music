@@ -1,0 +1,5 @@
+/* components/share/index.wxss */
+.container image{
+  width:28rpx;
+  height:28rpx;
+}
