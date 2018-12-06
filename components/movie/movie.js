@@ -6,14 +6,25 @@ Component({
   properties: {
     banner:{
       type:String
+    },
+    typeTitle: {
+      type: Number,
+       observer(newVal, oldVel, changedPath) {
+        if(newVal === 100) {
+          this.setData({
+            label : '电影'
+          })
+        }
+      }
     }
+
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    
+    label: ''
   },
 
   /**

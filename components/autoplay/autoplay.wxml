@@ -1,0 +1,4 @@
+<!--components/autoplay/autoplay.wxml-->
+<view class="index-autoplay">
+  <text>{{ autoplayTitle }}</text>
+</view>

@@ -1,25 +1,27 @@
 <!--pages/index/index.wxml-->
-<view class='index'>
-  <view class='header'>
+<view class='box'>
+
+
+  <view class='index'>
+    <view class='header'>
       <f-date index="{{Indexheader.index}}" />
       <view class='header-right'>
-        <f-like bind:like="onlike" count="{{ Indexheader.fav_nums }}" like="{{ Indexheader.like_status }}"/>
+        <f-like bind:like="onlike" count="{{ Indexheader.fav_nums }}" like="{{ Indexheader.like_status }}" />
         <f-share />
       </view>
-  </view>
-  <view class="banner">
-    <f-movie banner="{{Indexheader.image}}"/>
-  </view>
-  <view class="content">
-    <view class="type" >
-      <text class="dian">电</text>
-      <text class="ying">影</text>
-      <text class="line">。</text>
     </view>
-    
-    <f-content content="{{ Indexheader.content }}。"/>
+    <view class="banner">
+      <f-movie banner="{{Indexheader.image}}" typeTitle="{{ Indexheader.type }}" />
+    </view>
+    <view class="content">
+      <f-content content="{{ Indexheader.content }}。" />
+    </view>
+    <view class='autoplay'>
+      <f-autoplay autoplayTitle="{{ Indexheader.title }}" />
+    </view>
   </view>
-  
-  
-//修改了样式
+  <view class="footer">
+    <f-footer />
+  </view>
+
 </view>

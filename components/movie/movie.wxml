@@ -1,4 +1,8 @@
 <!--components/movie/movie.wxml-->
 <view class="movie">
   <image class="movie-banner" src="{{ banner }}"></image>
+  <view class="type" >
+      <text class="dian">{{label}}</text>
+      <text class="line">。</text>
+    </view>
 </view>
