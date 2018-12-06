@@ -1,0 +1,4 @@
+<!--components/like/lik e.wxml-->
+<view class='like'>
+  <image src='images/xin.png' />
+</view>
