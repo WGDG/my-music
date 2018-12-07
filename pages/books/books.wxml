@@ -1,0 +1,14 @@
+<!--pages/books/books.wxml-->
+<view class="Books">
+  <view class="header">
+    <f-header/>
+  </view>
+  <view class="content">
+    <f-content Bookes="{{ BookesList }}" />
+  </view>
+  <view class="footer">
+    <f-footer/>
+  </view>
+  
+
+</view>

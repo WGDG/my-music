@@ -1,0 +1,58 @@
+/* components/bookes/content/content.wxss */
+.bookes-content{
+  background: #f9f9f9;
+  width:100%;
+  height:100%;
+}
+.title{
+  display:flex;
+  justify-content: center;
+  /* padding-top:25rpx; */
+  font-size: 33rpx;
+  height:97rpx;
+  line-height:97rpx;
+}
+.content{
+  display:flex;
+  padding:0rpx 62rpx 64rpx 59rpx;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content-one{
+  width:242rpx;
+  height:362rpx;
+  margin-bottom:60rpx;
+  background: #fff;
+}
+image{
+  width:240rpx;
+  height:224rpx;
+}
+
+
+.info{
+   display:block;
+  padding-left:22rpx;
+  width:214rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.name{
+  font-size: 25rpx;
+  padding-top:20rpx;
+}
+.author{
+  padding-top:5rpx;
+  font-size:20rpx;
+  display:block;
+  color:#a0a0a0;
+  border:1px solid #f7f7f7;
+}
+.evaluate{
+  font-size:22rpx;
+  color:#c4c4c4;
+  display:block;
+  padding-top:8rpx;
+  padding-left:60rpx;
+} 

@@ -1,38 +1,18 @@
-// pages/index/index.js
-import { IndexModel } from '../../models/index/index.js'
-import { LikeModel } from '../../models/like.js'
-let indexModel = new IndexModel()
-let likeModel = new LikeModel()
+// pages/loves/loves.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    Indexheader: [],
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    indexModel.getDataLatest(res => {
-      //  console.log(res)
-      this.setData({
-        Indexheader: res,
-      })
-      // if (this.data.Indexheader.type = 100) {
-      //   this.setData({
-      //     titles: '电影'
-      //   })
-      // } else if (this.data.Indexheader.type = 200){
-      //   this.setData({
-      //     titles: '音乐'
-      //   })
-      // } 
-        
-    })
-      
+
   },
 
   /**
@@ -82,10 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  onlike (ev) {
-    let { behavior } = ev.detail
-    let { id, type } = this.data.Indexheader
-    likeModel.like(behavior, id, type)
   }
 })
