@@ -21,9 +21,13 @@ Component({
    */
   methods: {
     next: function () {
-      console.log(this)
-      this.triggerEvent('next',{
+      this.triggerEvent('onnext',{
         "xxx":"下一个"
+      },{})
+    },
+    prev: function () {
+      this.triggerEvent('prev', {
+        "xxx": "上一个"
       },{})
     }
   }

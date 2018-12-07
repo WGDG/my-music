@@ -1,8 +1,10 @@
 // pages/index/index.js
 import { IndexModel } from '../../models/index/index.js'
 import { LikeModel } from '../../models/like.js'
+import { AutoPlay } from '../../models/index/autoplay/autoplay.js'
 let indexModel = new IndexModel()
 let likeModel = new LikeModel()
+let autoPlayModel = new AutoPlay()
 Page({
 
   /**
@@ -17,20 +19,10 @@ Page({
    */
   onLoad: function (options) {
     indexModel.getDataLatest(res => {
-      //  console.log(res)
+
       this.setData({
         Indexheader: res,
-      })
-      // if (this.data.Indexheader.type = 100) {
-      //   this.setData({
-      //     titles: '电影'
-      //   })
-      // } else if (this.data.Indexheader.type = 200){
-      //   this.setData({
-      //     titles: '音乐'
-      //   })
-      // } 
-        
+      })   
     })
       
   },
@@ -87,5 +79,21 @@ Page({
     let { behavior } = ev.detail
     let { id, type } = this.data.Indexheader
     likeModel.like(behavior, id, type)
+  },
+  next (ev) {
+    let { index } = this.data.Indexheader
+    autoPlayModel.getDataNext(index, res => {
+      this.setData({
+        Indexheader: res
+      })
+    })
+  },
+  onprev (ev) {
+    let { index } = this.data.Indexheader
+    autoPlayModel.getDataPrev(index, res=> {
+      this.setData({
+        Indexheader: res
+      })
+    })
   }
 })

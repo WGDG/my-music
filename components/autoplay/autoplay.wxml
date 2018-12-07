@@ -1,10 +1,10 @@
 <!--components/autoplay/autoplay.wxml-->
 <view class="index-autoplay">
-<view class='left-image'>
-  <image src="images/left.png"/>
-</view>
+  <view class='left-image' bindtap='prev'>
+    <image src="images/left.png" />
+  </view>
   <text>{{ autoplayTitle }}</text>
   <view class="right-image" bindtap="next">
-    <image src="images/right.png"/>
+    <image src="images/right.png" />
   </view>
 </view>

@@ -15,7 +15,7 @@
       <f-content content="{{ Indexheader.content }}。" />
     </view>
     <view class='autoplay'>
-      <f-autoplay autoplayTitle="{{ Indexheader.title }}" />
+      <f-autoplay autoplayTitle="{{ Indexheader.title }}" bind:onnext="next" bind:prev="onprev"/>
     </view>
   </view>
   <view class="footer">
