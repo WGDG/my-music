@@ -14,6 +14,14 @@ Component({
           this.setData({
             label : '电影'
           })
+        }else if(newVal === 200) {
+          this.setData({
+            label: '音乐'
+          })
+        }else if(newVal === 300 ) {
+          this.setData({
+            label: '句子'
+          })
         }
       }
     }
