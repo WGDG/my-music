@@ -20,6 +20,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    next: function () {
+      console.log(this)
+      this.triggerEvent('next',{
+        "xxx":"下一个"
+      },{})
+    }
   }
 })

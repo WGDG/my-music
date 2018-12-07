@@ -1,15 +1,21 @@
 <!--components/footer/footer.wxml-->
 <view class="index-footer">
     <view class="popular">
-      <view class="popular-image"></view>
+      <view class="popular-image">
+        <image src="images/popular.png"/>
+      </view>
       <view class="popular-class">流行</view>
     </view>
     <view class="popular">
-      <view class="popular-image"></view>
+      <view class="popular-image">
+        <image src="images/bookl.png"/>
+      </view>
       <view class="popular-class">书单</view>
     </view>
     <view class="popular">
-      <view class="popular-image"></view>
+      <view class="popular-image">
+        <image src="images/likel.png" />
+      </view>
       <view class="popular-class">喜欢</view>
     </view>
 </view>
