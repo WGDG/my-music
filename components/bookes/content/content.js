@@ -7,12 +7,6 @@ Component({
     Bookes:{
       type: Object
     },
-    // title:{
-    //   type:Object
-    // },
-    // autho:{
-    //   type: Object
-    // }
   },
 
   /**
