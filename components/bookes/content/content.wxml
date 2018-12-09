@@ -2,7 +2,7 @@
 <view class="books">
   <view class="bookes-content">
       <text class="title">精选</text>
-      <view class="content" >
+      <view class="content" bindtap='Detail'>
       
           <view class="content-one" wx:for="{{ Bookes}}" wx:key="index">
               <image src="{{ item.image }}"></image>

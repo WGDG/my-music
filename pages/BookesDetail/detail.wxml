@@ -1,0 +1,18 @@
+<!--pages/BookesDetail/detail.wxml-->
+<view class="BookesDetail">
+  <view class="header">
+    <f-header/>
+  </view>
+  <view class="content">
+    <f-detail/>
+    <f-pingjia/>
+    <f-content/>
+    <f-info/>
+  </view>
+  <view class="footer">
+    <f-footer/>
+    <f-like class="like"/>
+    <f-share class="share"/>
+  </view>
+  
+</view>

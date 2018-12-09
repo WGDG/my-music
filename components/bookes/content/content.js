@@ -20,6 +20,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    Detail() {
+      wx.navigateTo({
+        url: '../../pages/BookesDetail/detail?id=1',
+      })
+    }
   }
 })

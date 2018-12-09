@@ -1,0 +1,27 @@
+/* components/bookesdetail/info/info.wxss */
+.info{
+  background: #fff;
+  height:389rpx;
+  margin:30rpx 0rpx;
+}
+.bookes{
+  text-align: center;
+  font-size: 30rpx;
+  padding-top:31rpx;
+}
+.info-one{
+  padding-top:29rpx;
+  font-size:24rpx;
+  color:#666666;
+  
+}
+.infolist{
+  padding:0rpx 0rpx 20rpx 60rpx;
+}
+.baozhia{
+  width:71rpx;
+  text-align: left;
+}
+.baozhib{
+  padding-left:21rpx;
+}

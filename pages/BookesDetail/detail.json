@@ -1,0 +1,14 @@
+{
+  "usingComponents":{
+    "f-header": "../../components/bookes/header/header",
+    "f-detail": "../../components/bookesdetail/detail/detail",
+    "f-pingjia": "../../components/bookesdetail/pingjia/pingjia",
+    "f-content": "../../components/bookesdetail/content/content",
+    "f-info": "../../components/bookesdetail/info/info",
+    "f-footer": "../../components/bookesdetail/footer/footer",
+    "f-like": "../../components/like/like",
+    "f-share": "../../components/share/index"
+  }
+
+
+}

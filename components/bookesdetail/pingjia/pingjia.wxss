@@ -1,0 +1,11 @@
+/* components/bookesdetail/pingjia/pingjia.wxss */
+.pingjia{
+  background: #fff;
+  height:389rpx;
+  margin:30rpx 0rpx;
+}
+.duan{
+  text-align: center;
+  font-size: 27rpx;
+  padding-top:31rpx;
+}

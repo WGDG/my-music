@@ -1,6 +1,6 @@
-// pages/books/books.js
-import { BookesModel } from '../../models/bookes.js'
-let bookesModel = new BookesModel()
+// pages/BookesDetail/detail.js
+// import { BookesDetaill } from '../../models/bookesdetail.js'
+// let bookesdetail = new BookesDetaill()
 
 Page({
 
@@ -8,21 +8,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    BookesList:[]
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    bookesModel.getDataLatest(res=>{
-      // console.log(res)
-      this.setData({
-        BookesList:res
-      })
-      
-    })
-      
+    // console.log(options)
+    // var id = options.id
+    // console.log(id)
+    // bookesdetail.getDataLatest(id,res=>{
+    //   console.log(res)
+    // })
   },
 
   /**
@@ -73,5 +71,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-  
 })

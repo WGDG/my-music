@@ -1,0 +1,35 @@
+<!--components/bookesdetail/info/info.wxml-->
+<view class="bookesdetail">
+  <view class="info">
+    <view class="bookes">书本信息</view>
+    <view class="info-one">
+      <view class="infolist">
+        <text class="baozhia">出版社</text>
+        <text class="baozhib">上海锦绣出版社</text>
+      </view>
+
+      <view class="infolist">
+        <text class="baozhia">出版年</text>
+        <text class="baozhib">2008-5</text>
+      </view>
+
+      <view class="infolist">
+        <text class="baozhia">页数</text>
+        <text class="baozhib">222</text>
+      </view>
+
+      <view class="infolist">
+        <text class="baozhia">定价</text>
+        <text class="baozhib">￥155.26元</text>
+      </view>
+
+       <view class="infolist">
+        <text class="baozhia">精装</text>
+        <text class="baozhib">平装</text>
+      </view>
+
+
+    </view>
+  </view>
+    
+</view>

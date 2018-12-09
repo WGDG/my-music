@@ -1,0 +1,7 @@
+<!--components/bookesdetail/pingjia/pingjia.wxml-->
+<view class="bookesdetail">
+  <view class="pingjia">
+    <view class="duan">短评</view>
+  </view>
+    
+</view>
