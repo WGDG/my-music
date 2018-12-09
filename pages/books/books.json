@@ -1,0 +1,9 @@
+{
+  "usingComponents":{
+    "f-header": "../../components/bookes/header/header",
+    "f-content": "../../components/bookes/content/content",
+    "f-footer":"../../components/footer/footer"
+  }
+
+
+}

@@ -6,13 +6,13 @@
       </view>
       <view class="popular-class">流行</view>
     </view>
-    <view class="popular">
+    <view class="popular" bindtap='Books'>
       <view class="popular-image">
         <image src="images/bookl.png"/>
       </view>
       <view class="popular-class">书单</view>
     </view>
-    <view class="popular">
+    <view class="popular" bindtap='Love'>
       <view class="popular-image">
         <image src="images/likel.png" />
       </view>

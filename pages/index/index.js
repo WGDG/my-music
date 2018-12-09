@@ -19,6 +19,7 @@ Page({
    */
   onLoad: function (options) {
     indexModel.getDataLatest(res => {
+
       this.setData({
         Indexheader: res,
       })   

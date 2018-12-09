@@ -18,6 +18,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    Books(){
+      wx.navigateTo({
+        url: '../../pages/books/books',
+      })
+    },
+    Love() {
+      wx.navigateTo({
+        url: '../../pages/loves/loves',
+      })
+    },
   }
 })
