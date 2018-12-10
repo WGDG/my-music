@@ -20,6 +20,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    Detail(ev) {
+      let id = ev.currentTarget.dataset.id
+      // console.log(id)
+      wx.navigateTo({
+        url: '../../pages/BookesDetail/detail?id=' + id,
+      })
+      this.triggerEvent('Bookes',{
+        id
+      },{})
+    }
   }
 })

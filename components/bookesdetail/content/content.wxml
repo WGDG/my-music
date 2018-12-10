@@ -1,0 +1,10 @@
+<!--components/bookesdetail/content/content.wxml-->
+<view class="bookesdetail">
+  <view class="content">
+    <view class="con">内容简介</view>
+    <view class="jianjie">
+        <text>{{ con.summary }}</text>
+    </view>
+  </view>
+    
+</view>

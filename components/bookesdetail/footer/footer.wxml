@@ -1,0 +1,9 @@
+<!--components/bookesdetail/footer/footer.wxml-->
+<view class="booksde">
+  <view class="bookes">
+      <view class="header"> 
+        <image class="detail-banner" src="image/2_03.png"></image>
+        <input class="input" type="text" placeholder='留下你的短评~'></input> 
+      </view> 
+  </view>
+</view>

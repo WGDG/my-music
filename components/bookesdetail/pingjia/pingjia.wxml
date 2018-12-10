@@ -1,0 +1,15 @@
+<!--components/bookesdetail/pingjia/pingjia.wxml-->
+<view class="bookesdetail">
+  <view class="pingjia">
+    <view class="duan">短评</view>
+    <view class="pingList">
+      <view class="list" wx:for="{{Pingjia}}" wx:key="index">
+        <text class="con">{{item.content}}</text>
+        <text class="num">+{{item.nums}}</text>
+      </view>
+    </view>
+
+  </view>
+  
+  
+</view>

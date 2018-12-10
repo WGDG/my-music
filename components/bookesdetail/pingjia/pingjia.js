@@ -1,10 +1,12 @@
-// components/bookes/header/header.js
+// components/bookesdetail/pingjia/pingjia.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    Pingjia:{
+      type:Array
+    }
   },
 
   /**
@@ -18,10 +20,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    Sousuo(){
-      wx.navigateTo({
-        url: '../../pages/Search/search',
-      })
-    }
+   
   }
 })

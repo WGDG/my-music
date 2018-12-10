@@ -1,0 +1,25 @@
+/* components/bookesdetail/footer/footer.wxss */
+
+.header{
+  display:flex;
+  padding-left:29rpx;
+  position:relative;
+}
+.detail-banner{
+  width:24rpx;
+  height:24rpx;
+  position:absolute;
+  left:60rpx;
+  top:15rpx;
+}
+
+.input{
+  width:407rpx;
+  height:56rpx;
+  border:1px solid #000;
+  /* background: pink; */
+  border-radius: 18rpx;
+  font-size: 24rpx;
+  outline: none;
+  padding-left:65rpx;
+}

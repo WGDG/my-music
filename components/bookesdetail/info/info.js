@@ -1,10 +1,12 @@
-// components/bookes/header/header.js
+// components/bookesdetail/info/info.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-
+    info:{
+      type:Object
+    }
   },
 
   /**
@@ -18,10 +20,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    Sousuo(){
-      wx.navigateTo({
-        url: '../../pages/Search/search',
-      })
-    }
+
   }
 })

@@ -1,6 +1,10 @@
-// pages/books/books.js
-import { BookesModel } from '../../models/bookes.js'
-let bookesModel = new BookesModel()
+// pages/Search/search.js
+import { MajorModel } from '../../models/bookes/search/major.js'
+let major = new MajorModel()
+
+import { SearchModel } from '../../models/bookes/search/sou.js'
+let search = new SearchModel()
+
 
 Page({
 
@@ -8,21 +12,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    BookesList:[]
+    Hot:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    bookesModel.getDataLatest(res=>{
+    major.getDataLatest(res=>{
       // console.log(res)
       this.setData({
-        BookesList:res
+        Hot:res.hot
       })
-      
+      // console.log(this.data.Hot)
     })
+
       
+  
   },
 
   /**
@@ -74,11 +80,14 @@ Page({
 
   },
   
-  //详情
-  Detail(ev) {
+  sousuo(ev){
     // console.log(ev)
-    let { id } = ev.detail
+    let { name } = ev.detail
+    //  console.log(name)
+    search.Sousuo(name,res => {
+      console.log(res)
+    })
   }
- 
-  
+
+
 })

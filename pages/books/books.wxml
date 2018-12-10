@@ -4,11 +4,11 @@
     <f-header/>
   </view>
   <view class="content">
-    <f-content Bookes="{{ BookesList }}" />
+    <f-content Bookes="{{ BookesList }}" bind:Bookes="Detail"/>
   </view>
   <view class="footer">
-    <f-footer/>
-  </view>
+    <!-- <f-footer/> -->
+   </view>
   
 
 </view>

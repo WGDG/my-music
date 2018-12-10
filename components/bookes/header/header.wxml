@@ -1,12 +1,9 @@
 <!--components/bookes/header/header.wxml-->
 <view class="books">
   <view class="bookes-header">
-      <view class="header"> 
-        <!-- <view class="bookes-banner"> -->
+      <view class="header" bindtap='Sousuo'> 
           <image class="bookes-banner" src="images/2_03.png"></image>
-        <!-- </view> -->
-
-        <input type="text" placeholder='请输入搜索内容'></input> 
+          <input type="text" placeholder='请输入搜索内容'></input> 
       </view> 
   </view>
 </view>

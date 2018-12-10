@@ -1,6 +1,9 @@
-// pages/books/books.js
-import { BookesModel } from '../../models/bookes.js'
-let bookesModel = new BookesModel()
+// pages/BookesDetail/detail.js
+import { BookesDetail } from '../../models/bookesdetail.js'
+let bookesdetail = new BookesDetail()
+
+import { PingjiaModel } from '../../models/bookes/pingjia/pingjia.js'
+let pingjia = new PingjiaModel()
 
 Page({
 
@@ -8,21 +11,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-    BookesList:[]
+    Bookesdetail:[],
+    comments: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    bookesModel.getDataLatest(res=>{
-      // console.log(res)
+    // console.log(options)
+     let id = options.id
+    //console.log(id)
+    bookesdetail.Bookes(id,res=>{
+    //  console.log(res)
       this.setData({
-        BookesList:res
+        Bookesdetail:res
       })
-      
     })
-      
+      pingjia.Pingjia(id, res=> {
+        // console.log(res)
+        this.setData({
+          comments: res.comments
+        })
+      }) 
   },
 
   /**
@@ -74,11 +85,5 @@ Page({
 
   },
   
-  //详情
-  Detail(ev) {
-    // console.log(ev)
-    let { id } = ev.detail
-  }
- 
-  
+
 })

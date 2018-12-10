@@ -1,0 +1,8 @@
+<!--components/bookesdetail/detail/detail.wxml-->
+ <view class="bookesdetail" >
+    <view class="detail">
+      <image src="{{ Detail.image}}"></image>
+      <view class="name">{{ Detail.title}}</view>
+      <view class="author">{{ Detail.author}}</view> 
+    </view>
+  </view>

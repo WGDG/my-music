@@ -5,7 +5,7 @@
     "f-share": "../../components/share/index",
     "f-movie": "../../components/movie/movie",
     "f-content": "../../components/content/content",
-    "f-autoplay": "../../components/autoplay/autoplay",
-    "f-footer": "../../components/footer/footer"
+    "f-autoplay": "../../components/autoplay/autoplay"
+    
   }
 }

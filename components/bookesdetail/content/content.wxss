@@ -1,0 +1,16 @@
+/* components/bookesdetail/content/content.wxss */
+.content{
+  background: #fff;
+  margin:30rpx 0rpx;
+}
+.con{
+  text-align: center;
+  font-size: 30rpx;
+  padding-top:33rpx;
+}
+.jianjie{
+  text-indent: 50rpx;
+  padding:26rpx 47rpx; 
+  font-size: 26rpx;
+  
+}

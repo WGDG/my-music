@@ -1,4 +1,4 @@
-// components/bookes/header/header.js
+// components/bookesdetail/footer/footer.js
 Component({
   /**
    * 组件的属性列表
@@ -18,10 +18,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    Sousuo(){
-      wx.navigateTo({
-        url: '../../pages/Search/search',
-      })
-    }
+
   }
 })

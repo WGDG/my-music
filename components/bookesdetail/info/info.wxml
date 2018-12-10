@@ -1,0 +1,35 @@
+<!--components/bookesdetail/info/info.wxml-->
+<view class="bookesdetail">
+  <view class="info">
+    <view class="bookes">书本信息</view>
+    <view class="info-one">
+      <view class="infolist">
+        <text class="baozhia">出版社</text>
+        <text class="baozhib">{{ info.publisher}}</text>
+      </view>
+
+      <view class="infolist">
+        <text class="baozhia">出版年</text>
+        <text class="baozhib">{{ info.pubdate }}</text>
+      </view>
+
+      <view class="infolist">
+        <text class="baozhia">页数</text>
+        <text class="baozhib">{{ info.pages}}</text>
+      </view>
+
+      <view class="infolist">
+        <text class="baozhia">定价</text>
+        <text class="baozhib">￥{{ info.price}}</text>
+      </view>
+
+       <view class="infolist">
+        <text class="baozhia">精装</text>
+        <text class="baozhib">{{ info.binding}}</text>
+      </view>
+
+
+    </view>
+  </view>
+    
+</view>
