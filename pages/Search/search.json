@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "f-header": "../../components/search/header/header",
+    "f-info": "../../components/search/info/info"
+  }
+}

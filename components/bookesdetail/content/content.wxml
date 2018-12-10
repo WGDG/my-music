@@ -3,7 +3,7 @@
   <view class="content">
     <view class="con">内容简介</view>
     <view class="jianjie">
-        <text>续吧v</text>
+        <text>{{ con.summary }}</text>
     </view>
   </view>
     

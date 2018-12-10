@@ -18,7 +18,5 @@
       <f-autoplay autoplayTitle="{{ Indexheader.title }}" bind:onnext="next" bind:prev="onprev"/>
     </view>
   </view>
-  <view class="footer">
-    <f-footer />
-  </view>
+  
 </view>

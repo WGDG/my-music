@@ -3,11 +3,11 @@
   <view class="header">
     <f-header/>
   </view>
-  <view class="content">
-    <f-detail/>
-    <f-pingjia/>
-    <f-content/>
-    <f-info/>
+  <view class="content" >
+    <f-detail Detail="{{ Bookesdetail }}" />
+    <f-pingjia Pingjia="{{comments}}"/>
+    <f-content con="{{ Bookesdetail }}"/>
+    <f-info info ="{{ Bookesdetail }}"/>
   </view>
   <view class="footer">
     <f-footer/>

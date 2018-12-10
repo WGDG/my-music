@@ -1,0 +1,9 @@
+<!--pages/Search/search.wxml-->
+<view class="Search">
+    <view class="header">
+      <f-header bind:Sousuo="sousuo"/>
+    </view>
+    <view class="info">
+      <f-info Hot="{{ Hot }}"/>
+    </view>
+</view>

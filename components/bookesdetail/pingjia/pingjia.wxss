@@ -1,11 +1,36 @@
 /* components/bookesdetail/pingjia/pingjia.wxss */
 .pingjia{
   background: #fff;
-  height:389rpx;
   margin:30rpx 0rpx;
 }
 .duan{
   text-align: center;
   font-size: 27rpx;
   padding-top:31rpx;
+}
+.pingList{
+  margin:33rpx 30rpx;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.list,.listTwo,.normal{
+ margin:10rpx;
+  height:54rpx;
+  line-height:54rpx;
+  font-size: 24rpx;
+  /* border:1px solid #fffadd; */
+  background: #f7f7f7;
+  border-radius: 16rpx;
+  /* width:289rpx; */
+}
+.listTwo{
+  background: #eefaff;
+}
+.con{
+  padding-left:28rpx;
+  color:#aaa;
+}
+.num{
+  padding-left:28rpx;
 }

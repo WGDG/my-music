@@ -1,7 +1,6 @@
 /* components/bookesdetail/content/content.wxss */
 .content{
   background: #fff;
-  height:284rpx;
   margin:30rpx 0rpx;
 }
 .con{
@@ -10,8 +9,8 @@
   padding-top:33rpx;
 }
 .jianjie{
+  text-indent: 50rpx;
   padding:26rpx 47rpx; 
   font-size: 26rpx;
-  line-height: 26rpx;
-  letter-spacing: 10rpx;
+  
 }

@@ -16,12 +16,14 @@
   
 }
 .infolist{
+  display:flex;
   padding:0rpx 0rpx 20rpx 60rpx;
 }
 .baozhia{
-  width:71rpx;
-  text-align: left;
+  display:block;
+  width:100rpx;
+  text-align: right;
 }
 .baozhib{
-  padding-left:21rpx;
+  padding-left:41rpx;
 }

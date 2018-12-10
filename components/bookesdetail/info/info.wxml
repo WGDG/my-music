@@ -5,27 +5,27 @@
     <view class="info-one">
       <view class="infolist">
         <text class="baozhia">出版社</text>
-        <text class="baozhib">上海锦绣出版社</text>
+        <text class="baozhib">{{ info.publisher}}</text>
       </view>
 
       <view class="infolist">
         <text class="baozhia">出版年</text>
-        <text class="baozhib">2008-5</text>
+        <text class="baozhib">{{ info.pubdate }}</text>
       </view>
 
       <view class="infolist">
         <text class="baozhia">页数</text>
-        <text class="baozhib">222</text>
+        <text class="baozhib">{{ info.pages}}</text>
       </view>
 
       <view class="infolist">
         <text class="baozhia">定价</text>
-        <text class="baozhib">￥155.26元</text>
+        <text class="baozhib">￥{{ info.price}}</text>
       </view>
 
        <view class="infolist">
         <text class="baozhia">精装</text>
-        <text class="baozhib">平装</text>
+        <text class="baozhib">{{ info.binding}}</text>
       </view>
 
 

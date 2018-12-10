@@ -1,0 +1,36 @@
+<!--components/search/info/info.wxml-->
+<view class="search">
+    <view class="history">
+      <view class="title">
+        <view class="line"></view>
+        <text class="h">历史搜索</text>
+      </view>
+
+      <view class="info">
+        <view class="infolist">假如真有时光机</view>
+         <view class="infolist">格林童话</view>
+        <view class="infolist">假如真有时光机</view>
+        <view class="infolist">假如真有时光机</view>
+        <view class="infolist">假如真有时光机</view>
+       
+      </view>
+
+    </view>
+
+
+    <view class="history">
+      <view class="title">
+        <view class="line"></view>
+        <text class="h">热门搜索</text>
+      </view>
+
+      <view class="info" wx:for="{{ Hot }}" wx:key="index">
+        <view class="infolist">{{ item }}</view>
+      </view>
+
+    </view>
+
+    <view class="list">
+      
+    </view>
+</view>
