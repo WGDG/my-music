@@ -1,0 +1,6 @@
+<!--components/movie/play/play.wxml-->
+ <view class='musicButton' bindtap='play'>
+      <view class='imageMusic'>
+        <image src="{{autoPlay ? play : stop}}" />
+      </view>
+    </view>

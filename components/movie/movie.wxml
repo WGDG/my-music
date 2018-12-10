@@ -1,8 +1,25 @@
 <!--components/movie/movie.wxml-->
-<view class="movie">
-  <image class="movie-banner" src="{{ banner }}"></image>
-  <view class="type" >
-      <text class="dian">{{label}}</text>
-      <text class="line">。</text>
-    </view>
+<view class="movie" wx:if="{{ banner.type == 100 }}">
+  <image class="movie-banner" src="{{ banner.image }}"></image>
+  <view class="type">
+    <text class="dian">电影</text>
+    <text class="line">。</text>
+  </view>
+</view>
+<view class="movie" wx:if="{{ banner.type == 200 }}">
+  <view class='music'>
+    <image class="movie-banner" src="{{ banner.image }}"></image>
+    <p-play inner="{{banner}}"/>
+  </view>
+  <view class="type">
+    <text class="dian">音乐</text>
+    <text class="line">。</text>
+  </view>
+</view>
+<view class="movie" wx:if="{{ banner.type == 300 }}">
+  <image class="movie-banner" src="{{ banner.image }}"></image>
+  <view class="type">
+    <text class="dian">句子</text>
+    <text class="line">。</text>
+  </view>
 </view>

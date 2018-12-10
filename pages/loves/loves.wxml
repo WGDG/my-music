@@ -1,2 +1,9 @@
 <!--pages/loves/loves.wxml-->
-<text>pages/loves/loves.wxml</text>
+<view class="usersLoves">
+  <view class='lovesContent'>
+    <f-lovesContentUser userInfo="{{userInfo}}"/>
+  </view>
+  <view class='loveinfo'>
+    <f-loveinfo/>
+  </view>
+</view>

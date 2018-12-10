@@ -1,0 +1,17 @@
+<!--components/loves/lovesContentUser/lovesContentUser.wxml-->
+<view class='lovesContentUser'>
+  <image src='{{backgroundImage}}' class='ImageBackground'></image>
+  <view class='imageModel'></view>
+  <view class='backgroundWrite'></view>
+  <view class='backgroundBottom'></view>
+  <view class='userInfo'>
+    <view class='userPhoto'>
+      <image src="{{userInfo.avatarUrl}}" />
+    </view>
+    <view class='userName'>{{userInfo.nickName}}</view>
+  </view>
+  <!-- <view class='ueserAction'>
+    <view class='userAbout'>关于我们</view>
+    <view class='userBooks'>我的书单</view>
+  </view> -->
+</view>

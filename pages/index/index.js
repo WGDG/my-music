@@ -19,12 +19,10 @@ Page({
    */
   onLoad: function (options) {
     indexModel.getDataLatest(res => {
-
       this.setData({
         Indexheader: res,
       })   
-    })
-      
+    })   
   },
 
   /**
@@ -81,6 +79,7 @@ Page({
     likeModel.like(behavior, id, type)
   },
   next (ev) {
+    console.log(ev)
     let { index } = this.data.Indexheader
     autoPlayModel.getDataNext(index, res => {
       this.setData({

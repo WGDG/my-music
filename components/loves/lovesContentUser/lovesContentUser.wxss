@@ -1,0 +1,56 @@
+
+/* components/loves/lovesContentUser/lovesContentUser.wxss */
+.lovesContent{
+  width: 100%;
+  height: 100%;
+}
+.lovesContentUser{
+  width: 100%;
+  height: 560rpx;
+  position: relative
+}
+.userInfo{
+  width: 100%;
+  height: 160rpx;
+}
+.userPhoto{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 50%;
+}
+.userPhoto image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.ImageBackground{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.imageModel{
+  width: 100%;
+  height: 100%;
+  background: #3b4855;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.backgroundWrite{
+  width: 100%;
+  height: 0;
+  border-top:  solid transparent;
+  border-left:  750rpx solid transparent;
+  border-right:  solid #fff;
+  border-bottom:112rpx solid #fff;
+  position: absolute;
+  top: 260rpx;
+}
+.backgroundBottom{
+  width: 100%;
+  height: 187rpx;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+}

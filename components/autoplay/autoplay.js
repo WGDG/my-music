@@ -6,14 +6,17 @@ Component({
   properties: {
     autoplayTitle: {
       type: String
-    }
+    },
+    content: {
+      type: String
+    },
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-
+    
   },
 
   /**
@@ -29,6 +32,6 @@ Component({
       this.triggerEvent('prev', {
         "xxx": "上一个"
       },{})
-    }
+    },
   }
 })

@@ -28,5 +28,10 @@ Component({
         url: '../../pages/loves/loves',
       })
     },
+    popular() {
+      wx.navigateTo({
+        url: '../../pages/index/index',
+      })
+    }
   }
 })

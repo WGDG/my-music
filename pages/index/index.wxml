@@ -9,13 +9,13 @@
       </view>
     </view>
     <view class="banner">
-      <f-movie banner="{{Indexheader.image}}" typeTitle="{{ Indexheader.type }}" />
+      <f-movie banner="{{Indexheader}}"/>
     </view>
     <view class="content">
       <f-content content="{{ Indexheader.content }}。" />
     </view>
     <view class='autoplay'>
-      <f-autoplay autoplayTitle="{{ Indexheader.title }}" bind:onnext="next" bind:prev="onprev"/>
+      <f-autoplay autoplayTitle="{{ Indexheader.title }}" bind:onnext="next" bind:prev="onprev" />
     </view>
   </view>
   <view class="footer">

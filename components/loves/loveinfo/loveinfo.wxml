@@ -1,0 +1,17 @@
+<!--components/loves/loveinfo/loveinfo.wxml-->
+<view class="loveinfo">
+  <view class="title">
+    <text>喜欢</text>
+  </view>
+  <view class="infolist">
+    <view class="list">
+      <view class="bottom">
+
+      </view>
+      <image src="image/2_07.png"></image>
+      <view class="con">
+          <text class="content">发货的价格VB都会举办的风险成本v</text>
+      </view>
+    </view>
+  </view>
+</view>

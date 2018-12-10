@@ -3,6 +3,7 @@
   <view class='left-image' bindtap='prev'>
     <image src="images/left.png" />
   </view>
+  
   <text>{{ autoplayTitle }}</text>
   <view class="right-image" bindtap="next">
     <image src="images/right.png" />
