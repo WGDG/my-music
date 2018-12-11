@@ -8,8 +8,8 @@
 </view>
 <view class="movie" wx:if="{{ banner.type == 200 }}">
   <view class='music'>
-    <image class="movie-banner" src="{{ banner.image }}"></image>
-    <p-play inner="{{banner}}"/>
+    <image class="movie-banner {{behavior == true ? 'music-movie' : ''}}" src="{{ banner.image }}" ></image>
+    <p-play inner="{{banner}}" bind:music="play"/>
   </view>
   <view class="type">
     <text class="dian">音乐</text>
