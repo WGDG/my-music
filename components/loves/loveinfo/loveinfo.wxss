@@ -2,10 +2,10 @@
 .loveinfo{
   width:100%;
   background: #f5f5f5;
-  padding:0rpx 30rpx;
+  
 }
 .title{
-  padding-top:50rpx;
+  padding:50rpx 0rpx 27rpx 0rpx;
   font-size:32rpx;
   text-align: center;
 }
@@ -17,10 +17,11 @@
   width:330rpx;
   height:470rpx;
   border:1px solid #ccc;
+  margin:20rpx;
 }
 .bottom{
-  height:80rpx;
-  background:pink;
+  display:flex;
+  margin:20rpx;
 }
 image{
   width:100%;
@@ -30,6 +31,32 @@ image{
   margin:39rpx 21rpx;
   font-size:27rpx;
   color:#999999;
-  overflow: hidden;
+  /* overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap; */
+}
 
+.type{
+  font-size: 23rpx;
+  text-align: center;
+  background: #f7f7f7;
+  width:72rpx;
+  height:40rpx;
+  padding:5rpx;
+
+}
+
+.love{
+  display: flex;
+  padding-left:161rpx;
+}
+.love>image{
+  width:26rpx;
+  height:23rpx;
+  padding-top:10rpx;
+}
+.lovenum{
+  font-size: 20rpx;
+  color:#c0c0c0;
+  padding-left:10rpx;
 }

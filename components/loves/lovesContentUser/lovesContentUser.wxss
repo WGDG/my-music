@@ -4,6 +4,9 @@
   width: 100%;
   height: 100%;
 }
+.ImageBackground{
+  position:relative;
+}
 .lovesContentUser{
   width: 100%;
   height: 560rpx;
@@ -17,16 +20,27 @@
   width: 121rpx;
   height: 121rpx;
   border-radius: 50%;
+  position:absolute;
+  bottom:180rpx;
+  left:310rpx;
 }
 .userPhoto image{
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  
 }
 .ImageBackground{
   width: 100%;
   height: 100%;
   display: block;
+}
+.userName{
+  font-size: 29rpx;
+  color:#000;
+  position:absolute;
+  bottom:130rpx;
+  left:325rpx;
 }
 .imageModel{
   width: 100%;
@@ -53,4 +67,29 @@
   background: #fff;
   position: absolute;
   bottom: 0;
+}
+.userAbout>image{
+  width:34rpx;
+  height:34rpx;
+  position:absolute;
+   bottom:80rpx;
+  left:140rpx;
+}
+.about{
+  position:absolute;
+  bottom:35rpx;
+  left:110rpx;
+  font-size: 23rpx;
+}
+.num{
+  position:absolute;
+  bottom:80rpx;
+  left:565rpx;
+  font-size:27rpx;
+}
+.bookes{
+  position:absolute;
+  bottom:40rpx;
+  left:530rpx;
+  font-size: 23rpx;
 }

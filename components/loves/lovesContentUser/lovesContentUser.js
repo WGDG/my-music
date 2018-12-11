@@ -6,7 +6,11 @@ Component({
   properties: {
     userInfo: {
       type: Object
+    },
+    Count:{
+      type:Number
     }
+
   },
 
   /**

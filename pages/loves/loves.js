@@ -1,5 +1,14 @@
 // pages/loves/loves.js
+import { LoveInfo } from '../../models/loves/loveinfo'
+let lovelnfo = new LoveInfo()
+
+
+import { MyBook } from '../../models/loves/mybook'
+let mybook = new MyBook()
+
+
 const app = getApp()
+
 Page({
 
   /**
@@ -8,13 +17,29 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    LoveList:[],
+    Count:''
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    lovelnfo.getDataLatest(res=>{
+      // console.log(res)
+      this.setData({
+        LoveList:res
+      })
+    }),
+      mybook.getDataLatest(res=>{
+        // console.log(res)
+        this.setData({
+          Count:res
+        })
+      // console.log(this.data.Count)
+      })
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

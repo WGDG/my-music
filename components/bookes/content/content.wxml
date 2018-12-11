@@ -4,7 +4,7 @@
       <text class="title">精选</text>
       <view class="content" >
       
-          <view class="content-one" wx:for="{{ Bookes}}" wx:key="index" bindtap='Detail' data-id="{{item.id}}">
+          <view class="content-one" wx:for="{{ Bookes }}" wx:key="index" bindtap='Detail' data-id="{{item.id}}">
               <image src="{{ item.image }}"></image>
               <view class="info">
                  <text class="name">{{ item.title}}</text>

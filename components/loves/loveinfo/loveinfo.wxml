@@ -4,14 +4,23 @@
     <text>喜欢</text>
   </view>
   <view class="infolist">
-    <view class="list">
+    <view class="list" wx:for="{{ Loveinfo }}" wx:key="index">
       <view class="bottom">
-
+        <view class="type" wx:if="{{ item.type==100 }}">音乐</view>
+        <view class="type" wx:if="{{ item.type==200 }}">电影</view>
+        <view class="type" wx:if="{{ item.type==300 }}">句子</view>
+        <view class="love">
+          <image src="image/xin-1.png"></image>
+          <view class="lovenum">{{ item.fav_nums}}</view>
+        </view>
       </view>
-      <image src="image/2_07.png"></image>
+      <image src="{{ item.image }}"></image>
       <view class="con">
-          <text class="content">发货的价格VB都会举办的风险成本v</text>
+          <text class="content">{{ item.content }}</text>
       </view>
     </view>
+
+
+    
   </view>
 </view>
