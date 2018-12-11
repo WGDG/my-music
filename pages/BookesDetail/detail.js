@@ -23,13 +23,13 @@ Page({
      let id = options.id
     //console.log(id)
     bookesdetail.Bookes(id,res=>{
-    //  console.log(res)
+     //console.log(res)
       this.setData({
         Bookesdetail:res
       })
     })
       pingjia.Pingjia(id, res=> {
-        // console.log(res)
+        console.log(res)
         this.setData({
           comments: res.comments
         })

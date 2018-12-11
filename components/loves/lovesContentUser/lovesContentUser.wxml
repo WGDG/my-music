@@ -10,8 +10,17 @@
     </view>
     <view class='userName'>{{userInfo.nickName}}</view>
   </view>
-  <!-- <view class='ueserAction'>
-    <view class='userAbout'>关于我们</view>
-    <view class='userBooks'>我的书单</view>
-  </view> -->
+  
+  <view class='ueserAction'>
+
+    <view class='userAbout'>
+      <image src="images/image.png"></image>
+      <view class="about">关于我们</view>
+    </view>
+
+    <view class='userBooks'>
+      <view class="num">{{ Count }}</view>
+      <text class="bookes">我的书单</text>
+    </view>
+  </view>
 </view>

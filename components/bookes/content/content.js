@@ -26,6 +26,7 @@ Component({
       wx.navigateTo({
         url: '../../pages/BookesDetail/detail?id=' + id,
       })
+      
       this.triggerEvent('Bookes',{
         id
       },{})
