@@ -5,7 +5,6 @@
    "pages/Search/search",
     "pages/books/books",
     "pages/BookesDetail/detail"
-   
   ],
   "window": {
     "backgroundTextStyle": "light",

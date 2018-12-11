@@ -30,7 +30,7 @@
   z-index: 1;
   width: 20rpx;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   font-size: 46rpx;
 }
 .line{

@@ -13,7 +13,7 @@
   
   <view class='ueserAction'>
 
-    <view class='userAbout'>
+    <view class='userAbout' bindtap='about'>
       <image src="images/image.png"></image>
       <view class="about">关于我们</view>
     </view>

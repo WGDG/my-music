@@ -1,0 +1,64 @@
+/* components/userLike/like_myder/myder.wxss */ 
+.box{ 
+  width:100%; 
+  height:100%; 
+  position: relative; 
+  color: #fff; 
+  font-size: 30rpx; 
+  text-align: center; 
+} 
+image{ 
+  height:100%; 
+} 
+.maskLayer{ 
+  height: 100%; 
+  width: 100%; 
+  position: absolute; 
+  top: 0; 
+  background:rgba(0,0,0,.7); 
+} 
+.userAvatarUrl{ 
+  margin:150rpx auto 35rpx auto; 
+  width:162rpx; 
+  height: 162rpx; 
+  padding: 16.5rpx; 
+  border:1px solid #fff; 
+  border-radius: 50%; 
+   
+} 
+.userAvatarUrl>.headPortrait{ 
+  width:100%; 
+  height:100%; 
+  overflow: hidden; 
+  border-radius: 50%; 
+} 
+.userNickName{ 
+  width:30rpx; 
+  margin: 65rpx auto 0 auto; 
+} 
+.CreatedBy{ 
+  width:192rpx; 
+  transform: rotate(90deg); 
+  margin: 100rpx auto 15rpx auto; 
+} 
+.vipcn{ 
+  width:478rpx; 
+  box-sizing: border-box; 
+  padding: 20rpx 1rpx; 
+  position: absolute; 
+  bottom: 15rpx; 
+  border-bottom: 1px solid #fff; 
+  left: 30rpx; 
+  text-align: left; 
+} 
+.vipcn>text{ 
+  font-size:24rpx; 
+  display:block; 
+  height:30rpx; 
+  color: #e2e2e2; 
+} 
+.vipcn>.smallfour{ 
+  margin: 10rpx 0 0 0; 
+  font-size:36rpx; 
+  color: #fff; 
+}

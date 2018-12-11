@@ -13,7 +13,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    inputShowed:false,
     inputValue:'',
   },
 
@@ -23,7 +22,6 @@ Component({
   
 
   methods: {
-   
     inputValue:function (e) {
       console.log(e)
       let {value} = e.detail

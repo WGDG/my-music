@@ -54,5 +54,5 @@ image{
   color:#c4c4c4;
   display:block;
   padding-top:8rpx;
-  padding-left:60rpx;
+  padding-left:130rpx;                                              
 } 

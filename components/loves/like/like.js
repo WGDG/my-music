@@ -1,22 +1,17 @@
-// components/bookesdetail/content/content.js
-
-
-
+// components/loves/like/like.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    con:{
-      type:Object
-    }
+
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    str: 'con',
+
   },
 
   /**

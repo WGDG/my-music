@@ -16,7 +16,7 @@ Page({
    */
   onLoad: function (options) {
     bookesModel.getDataLatest(res=>{
-     console.log(res)
+    //  console.log(res)
       this.setData({
         BookesList:res
       })

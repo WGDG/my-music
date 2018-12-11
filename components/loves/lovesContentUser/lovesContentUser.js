@@ -24,6 +24,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    about(){
+       console.log(12)
+      wx.navigateTo({
+        url: '../like/like',
+      })
+    }
   }
 })
