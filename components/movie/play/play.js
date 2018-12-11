@@ -40,6 +40,10 @@ Component({
               this.setData({
                 autoPlay: true
               })
+              let behavior = this.data.autoPlay
+              this.triggerEvent('music', {
+                behavior,
+              }, {})
             }
           })
         }else {
@@ -53,10 +57,20 @@ Component({
               this.setData({
                 autoPlay: false
               })
+              let behavior = this.data.autoPlay
+              this.triggerEvent('music', {
+                behavior,
+              }, {})
             })
+            
           }
-         
+          let behavior = this.data.autoPlay
+          this.triggerEvent('music', {
+            behavior,
+          }, {})
         } 
+  
+        
       }
   }
 })
