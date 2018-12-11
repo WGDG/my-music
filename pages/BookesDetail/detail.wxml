@@ -1,18 +1,20 @@
 <!--pages/BookesDetail/detail.wxml-->
 <view class="BookesDetail">
-  <view class="header">
-    <f-header/>
-  </view>
-  <view class="content" >
-    <f-detail Detail="{{ Bookesdetail }}" />
-    <f-pingjia Pingjia="{{comments}}"/>
-    <f-content con="{{ Bookesdetail }}"/>
-    <f-info info ="{{ Bookesdetail }}"/>
+  <view class='BookesDetailContent'>
+    <view class="header">
+      <f-header/>
+    </view>
+    <view class="content">
+      <f-detail Detail="{{ Bookesdetail }}" />
+      <f-pingjia Pingjia="{{comments}}" />
+      <f-content con="{{ Bookesdetail }}" />
+      <f-info info="{{ Bookesdetail }}" />
+    </view>
   </view>
   <view class="footer">
     <f-footer/>
-    <f-like class="like"/>
-    <f-share class="share"/>
+    <f-like class="like" />
+    <f-share class="share" />
   </view>
-  
+
 </view>

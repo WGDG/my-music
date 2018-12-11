@@ -1,18 +1,15 @@
 // pages/Search/search.js
 import { MajorModel } from '../../models/bookes/search/major.js'
-let major = new MajorModel()
-
 import { SearchModel } from '../../models/bookes/search/sou.js'
+let major = new MajorModel()
 let search = new SearchModel()
-
-
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    Hot:[]
+    Hot:[],
+    books: []
   },
 
   /**
@@ -81,11 +78,13 @@ Page({
   },
   
   sousuo(ev){
-    // console.log(ev)
-    let { name } = ev.detail
-    //  console.log(name)
-    search.Sousuo(name,res => {
+    console.log(ev)
+    let { value } = ev.detail
+    search.Sousuo(value,res => {
       console.log(res)
+      this.setData({
+        books: res.books
+      })
     })
   }
 

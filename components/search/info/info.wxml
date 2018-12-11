@@ -1,36 +1,43 @@
 <!--components/search/info/info.wxml-->
 <view class="search">
+  <view wx:if="{{books.length == 0}}">
     <view class="history">
       <view class="title">
         <view class="line"></view>
         <text class="h">历史搜索</text>
       </view>
-
-      <view class="info">
-        <view class="infolist">假如真有时光机</view>
-         <view class="infolist">格林童话</view>
-        <view class="infolist">假如真有时光机</view>
-        <view class="infolist">假如真有时光机</view>
-        <view class="infolist">假如真有时光机</view>
-       
+      <view class='historyInfo'>
+        <view class="info">
+          <view class="infolist">假如真有时光机</view>
+          <view class="infolist">格林童话</view>
+          <view class="infolist">假如真有时光机</view>
+          <view class="infolist">假如真有时光机</view>
+          <view class="infolist">假如真有时光机</view>
+        </view>
       </view>
-
     </view>
-
-
     <view class="history">
       <view class="title">
         <view class="line"></view>
         <text class="h">热门搜索</text>
       </view>
-
-      <view class="info" wx:for="{{ Hot }}" wx:key="index">
-        <view class="infolist">{{ item }}</view>
+      <view class='historyInfo'>
+        <view class="info" wx:for="{{ Hot }}" wx:key="index">
+          <view class="infolist">{{ item }}</view>
+        </view>
       </view>
-
     </view>
+  </view>
 
-    <view class="list">
-      
+  <view class="list">
+    <view class='bookItem' wx:for="{{books}}" wx:key="this.index" bindtap='infoDetail' data-id="{{item.id}}">
+      <view class='bookItemImage'>
+        <image src="{{item.image}}"></image>
+      </view>
+      <view class="bookItemAt">
+        <view class='itemTitle'>{{item.title}}</view>
+        <view class='author'>{{item.author[0]}}</view>
+      </view>
     </view>
+  </view>
 </view>

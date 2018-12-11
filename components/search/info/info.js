@@ -6,6 +6,9 @@ Component({
   properties: {
     Hot:{
       type:Object
+    },
+    books: {
+      type: Array
     }
   },
 
@@ -20,6 +23,13 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    infoDetail(ev){
+      console.log(ev)
+      let {id} = ev.currentTarget.dataset
+      wx.navigateTo({
+        url: '../../pages/BookesDetail/detail?id=' + id,
+      })
+    
+    }
   }
 })

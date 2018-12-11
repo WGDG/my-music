@@ -4,6 +4,6 @@
       <f-header bind:Sousuo="sousuo"/>
     </view>
     <view class="info">
-      <f-info Hot="{{ Hot }}"/>
+      <f-info Hot="{{ Hot }}" books="{{books}}"/>
     </view>
 </view>

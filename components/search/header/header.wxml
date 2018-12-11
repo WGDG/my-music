@@ -1,15 +1,15 @@
 <!--components/search/header/header.wxml-->
 <view class="search">
   <view class="search-header">
-      <view class="header" > 
-        <view class="input">
-          <image class="search-banner" src="images/2_03.png"></image>
-          <input type="text" placeholder='搜索图书名称' focus="{{inputShowed}}" bindinput="inputValue"  bindtap='Sousuo'></input> 
-        </view>
-          
-        <view class="cancel">
-          <text class="can" bindtap='cancel'>取消</text>
-        </view>
-      </view> 
+    <view class="header">
+      <view class="input">
+        <image class="search-banner" src="images/2_03.png"></image>
+        <input type="text" placeholder='搜索图书名称' bindinput="inputValue"></input>
+        <image class='detail' src='images/detail.png' wx:if="{{inputValue}}"></image>
+      </view>
+      <view class="cancel">
+        <text class="can" bindtap='cancel'>取消</text>
+      </view>
+    </view>
   </view>
 </view>

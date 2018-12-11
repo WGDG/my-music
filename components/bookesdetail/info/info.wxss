@@ -27,3 +27,6 @@
 .baozhib{
   padding-left:41rpx;
 }
+.bookesdetail{
+  margin-bottom: 60rpx;
+}

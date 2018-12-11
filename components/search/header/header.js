@@ -14,7 +14,7 @@ Component({
    */
   data: {
     inputShowed:false,
-    inputValue:''
+    inputValue:'',
   },
 
   /**
@@ -23,23 +23,17 @@ Component({
   
 
   methods: {
-    Sousuo: function () {
-      this.setData({
-        inputShowed: true
-      })
-    },
+   
     inputValue:function (e) {
-      // console.log(e)
-      let name = e.detail.value
-      // console.log(name)
-
+      console.log(e)
+      let {value} = e.detail
+      this.setData({
+        inputValue: value
+      })
       this.triggerEvent('Sousuo', {
-        name
+        value
       }, {})
-
-
     },
-
     cancel(){
       wx.navigateTo({
         url: '../../pages/books/books',

@@ -1,11 +1,10 @@
 import { HTTP } from '../../../utils/http.js'
 
 class SearchModel extends HTTP {
-  Sousuo(name,callback) {
-    let q = name
-    // console.log(q)
+  Sousuo(value,callback) {
+    
     this.request({
-      url: '/book/search?q='+ q,
+      url: '/book/search?q='+ value,
       success(res) {
         callback(res)
       }
