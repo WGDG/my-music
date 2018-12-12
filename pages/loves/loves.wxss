@@ -9,3 +9,41 @@ page{
   display: flex;
   flex-direction: column;
 }
+.lovesContent{
+  position: relative;
+}
+f-slot{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: 5;
+}
+.userPhoto{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 50%;
+  
+}
+.userPhoto image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+}
+.userPhoto button{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.userName{
+  font-size: 29rpx;
+  color:#000;
+  z-index: 5;
+  margin-left: 35rpx;
+  margin-top: 10rpx;
+}

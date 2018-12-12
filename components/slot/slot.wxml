@@ -1,0 +1,2 @@
+<!--components/slot/slot.wxml-->
+<slot></slot>

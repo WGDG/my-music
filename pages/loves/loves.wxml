@@ -1,9 +1,22 @@
 <!--pages/loves/loves.wxml-->
 <view class="usersLoves">
   <view class='lovesContent'>
-    <f-lovesContentUser userInfo="{{userInfo}}" count="{{ Count }}"/>
+    <f-slot>
+      <view class='userPhoto' wx:if="{{!hasUserInfo && canIUse}}">
+        <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+        <image src="images/timg.jpg" />
+      </view>
+      <view class='userPhoto'>
+        <image src="{{userInfo.avatarUrl}}" />
+      </view>
+      <view class='userName'>{{userInfo.nickName}}</view>
+    </f-slot>
+    <f-lovesContentUser userInfo="{{userInfo}}" count="{{ Count }}" />
   </view>
   <view class='loveinfo'>
-    <f-loveinfo Loveinfo="{{ LoveList }}" bind:getUserInfo="{{getUserInfo}}"/>
+
+    <f-loveinfo Loveinfo="{{ LoveList }}"></f-loveinfo>
+
   </view>
+
 </view>

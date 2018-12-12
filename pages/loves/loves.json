@@ -1,7 +1,7 @@
 {
   "usingComponents": {
     "f-lovesContentUser": "../../components/loves/lovesContentUser/lovesContentUser",
-    "f-loveinfo": "../../components/loves/loveinfo/loveinfo"
-    
+    "f-loveinfo": "../../components/loves/loveinfo/loveinfo",
+    "f-slot": "../../components/slot/slot"
   }
 }

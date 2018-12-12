@@ -23,7 +23,7 @@
 
 .type{
   position: absolute;
-  bottom: -60rpx;
+  bottom: -23rpx;
   left: 30rpx;
   color: #888;
   letter-spacing: 30rpx;
