@@ -13,7 +13,7 @@
     <view class='userPhoto' wx:if="{{avatarUrl && nickName}}">
       <image src="{{avatarUrl}}" />
     </view>
-    <view class='userName' wx:if="{{avatarUrl && nickName}}">{{nickName}}</view>
+    <view  class='userName' wx:if="{{avatarUrl && nickName}}">{{nickName}}</view>
   </view>
 
   <view class='ueserAction'>

@@ -6,7 +6,8 @@ Component({
   properties: {
     Pingjia:{
       type:Array
-    }
+    },
+
   },
 
   /**

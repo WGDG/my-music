@@ -32,7 +32,7 @@ Page({
       pingjia.Pingjia(id, res=> {
         console.log(res)
         this.setData({
-          comments: res.comments
+          comments: res.comments,
         })
       }) 
   },

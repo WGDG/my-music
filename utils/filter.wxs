@@ -1,12 +1,10 @@
-// var firstUpper = function (str){
-//   //wxs逻辑  去除标签
-//   return str.regexstr= "<[/n]*>";
-// }
-
-
-
-// //对外接口
-// module.exports={
-//   firstUpper: firstUpper
-// }
+var firstUpper = function (text){
+  //wxs逻辑  去除标签
+  var reg = getRegExp('\\\\n', 'g')
+  return text.replace(reg, '\n\r\t\r\t\r\t\r\t\r\t\r\t');
+}
+//对外接口
+module.exports={
+  firstUpper: firstUpper
+}
 
