@@ -30,6 +30,16 @@
   border-radius: 50%;
   
 }
+.userPhoto button{
+  width: 121rpx;
+  height: 121rpx;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .ImageBackground{
   width: 100%;
   height: 100%;
@@ -40,7 +50,7 @@
   color:#000;
   position:absolute;
   bottom:130rpx;
-  left:325rpx;
+  left:345rpx;
 }
 .imageModel{
   width: 100%;

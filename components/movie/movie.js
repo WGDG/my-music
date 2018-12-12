@@ -24,9 +24,6 @@ Component({
       console.log(ev)
       let {behavior} = ev.detail
       console.log(behavior)
-      if (behavior == true) {
-        
-      } 
       this.setData({
         behavior: behavior
       })

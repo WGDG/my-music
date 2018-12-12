@@ -6,8 +6,8 @@
   <view class="infolist">
     <view class="list" wx:for="{{ Loveinfo }}" wx:key="index">
       <view class="bottom">
-        <view class="type" wx:if="{{ item.type==100 }}">音乐</view>
-        <view class="type" wx:if="{{ item.type==200 }}">电影</view>
+        <view class="type" wx:if="{{ item.type==100 }}">电影</view>
+        <view class="type" wx:if="{{ item.type==200 }}">音乐</view>
         <view class="type" wx:if="{{ item.type==300 }}">句子</view>
         <view class="love">
           <image src="image/xin-1.png"></image>

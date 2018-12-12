@@ -4,6 +4,6 @@
     <f-lovesContentUser userInfo="{{userInfo}}" count="{{ Count }}"/>
   </view>
   <view class='loveinfo'>
-    <f-loveinfo Loveinfo="{{ LoveList }}"/>
+    <f-loveinfo Loveinfo="{{ LoveList }}" bind:getUserInfo="{{getUserInfo}}"/>
   </view>
 </view>
