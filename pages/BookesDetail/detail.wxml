@@ -4,10 +4,32 @@
     <view class="header">
       <f-header/>
     </view>
+    <!-- 全部内容 -->
     <view class="content">
+    <!-- 详情 -->
       <f-detail Detail="{{ Bookesdetail }}" />
-      <f-pingjia Pingjia="{{comments}}" />
+      <!-- 评价 -->
+     
+        <f-pingjia first="first" second="second">
+           <view class="pingjia">
+              <view class="duan">短评</view>
+              <view class="pingList">
+                <view class="list" wx:for="{{comments}}" wx:key="index">
+                  <!-- <text class="first">{{ item.content[0]}}</text>
+                  <text class="second">{{ item.content[1]}}</text> -->
+                  <text class="con">{{item.content}}</text>
+                  <text class="num">+{{item.nums}}</text>
+                </view>
+              </view>
+            </view>
+
+        </f-pingjia>
+    
+
+    <!-- 内容 -->
       <f-content con="{{ Bookesdetail }}" />
+
+      <!-- 信息 -->
       <f-info info="{{ Bookesdetail }}" />
     </view>
   </view>
