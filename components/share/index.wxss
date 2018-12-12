@@ -1,4 +1,12 @@
 /* components/share/index.wxss */
+.share{
+  width:100rpx;
+  height:100rpx;
+  background: #fff;
+  position:fixed;
+  right:0;
+  top:-20rpx;
+}
 .container image{
   width:28rpx;
   height:28rpx;

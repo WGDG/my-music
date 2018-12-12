@@ -5,5 +5,19 @@
     </view>
     <view class="info">
       <f-info Hot="{{ Hot }}" books="{{books}}"/>
+      <f-pingjia>
+         <view class="history">
+          <view class="title">
+            <view class="line"></view>
+            <text class="h">热门搜索</text>
+          </view>
+          <view class='historyInfo'>
+            <view class="info" wx:for="{{ Hot }}" wx:key="index">
+              <view class="infolist">{{ item }}</view>
+            </view>
+          </view>
+        </view>
+      
+      </f-pingjia>
     </view>
 </view>

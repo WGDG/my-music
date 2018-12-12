@@ -34,6 +34,7 @@ Page({
         this.setData({
           comments: res.comments,
         })
+        // console.log(this.data.comments[0])
       }) 
   },
 

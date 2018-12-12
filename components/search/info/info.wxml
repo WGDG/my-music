@@ -16,7 +16,9 @@
         </view>
       </view>
     </view>
-    <view class="history">
+
+
+    <!-- <view class="history">
       <view class="title">
         <view class="line"></view>
         <text class="h">热门搜索</text>
@@ -26,7 +28,9 @@
           <view class="infolist">{{ item }}</view>
         </view>
       </view>
-    </view>
+    </view> -->
+
+
   </view>
 
   <view class="list">
