@@ -15,8 +15,8 @@
               <view class="duan">短评</view>
               <view class="pingList">
                 <view class="list" wx:for="{{comments}}" wx:key="index">
-                  <!-- <text class="first">{{ item.content[0]}}</text>
-                  <text class="second">{{ item.content[1]}}</text> -->
+                  <text class="first">{{ item.content[0]}}</text>
+                  <text class="second">{{ item.content[1]}}</text>
                   <text class="con">{{item.content}}</text>
                   <text class="num">+{{item.nums}}</text>
                 </view>
@@ -36,7 +36,7 @@
   <view class="footer">
     <f-footer/>
     <f-like class="like" />
-    <f-share class="share" />
+
   </view>
 
 </view>

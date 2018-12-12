@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "f-header": "../../components/search/header/header",
-    "f-info": "../../components/search/info/info"
+    "f-info": "../../components/search/info/info",
+    "f-pingjia": "../../components/bookesdetail/pingjia/pingjia"
   }
 }

@@ -26,15 +26,14 @@
 .like{
   padding-left:86rpx;
 }
-.share{
-  padding-left:20rpx;
-}
 
-.first{
-  background:#fffadd;
+.first:nth-child(1){
+  /* background:#fffadd; */
+  background: blue;
 }
 .second{
-  background:#eefaff;
+  /* background:#eefaff; */
+  background: pink;
 }
 .pingjia{
   background: #fff;
