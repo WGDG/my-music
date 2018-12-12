@@ -5,7 +5,7 @@
       <f-date index="{{Indexheader.index}}" />
       <view class='header-right'>
         <f-like bind:like="onlike" count="{{ Indexheader.fav_nums }}" like="{{ Indexheader.like_status }}" />
-        <f-share />
+        <button open-type="share"><f-share/></button>
       </view>
     </view>
     <view class="banner">

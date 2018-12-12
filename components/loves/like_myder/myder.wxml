@@ -1,0 +1,21 @@
+<!--components/userLike/like_myder/myder.wxml--> 
+<view class="box">  
+    <image src='../images/17.png'></image> 
+    <view class='maskLayer'> 
+        <view class='userAvatarUrl'> 
+          <view class='headPortrait'> 
+            <open-data  type="userAvatarUrl"></open-data> 
+          </view> 
+        </view> 
+        <view class='CreatedBy'> 
+            <text>Created By</text> 
+        </view> 
+        <view class='userNickName'> 
+            <open-data  type="userNickName"></open-data> 
+        </view> 
+        <view class='vipcn'> 
+            <text>关注微信公众号</text> 
+            <text class='smallfour'>同学们听我说</text> 
+        </view> 
+    </view> 
+</view>

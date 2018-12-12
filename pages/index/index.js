@@ -6,11 +6,22 @@ let indexModel = new IndexModel()
 let likeModel = new LikeModel()
 let autoPlayModel = new AutoPlay()
 Page({
+  onShareAppMessage: function () {
+    let that = this;
+    return {
+      title: '转发给好友', // 转发后 所显示的title
+      imageUrl: "pages/loves/loves",
+      path: '/pages/index/index', // 相对的路径
+      
+    }
+  },
 
+  
   /**
    * 页面的初始数据
    */
   data: {
+    
     Indexheader: [],
   },
 
@@ -18,11 +29,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
     indexModel.getDataLatest(res => {
       this.setData({
         Indexheader: res,
       })   
-    })   
+    }) 
   },
 
   /**

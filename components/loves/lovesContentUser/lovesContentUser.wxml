@@ -5,7 +5,7 @@
   <view class='backgroundWrite'></view>
   <view class='backgroundBottom'></view>
   <view class='userInfo'>
-  <view class='userPhoto'>
+    <view class='userPhoto'>
       <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo"></button>
       <image src="images/timg.jpg" />
     </view>
@@ -13,17 +13,19 @@
     <view class='userPhoto' wx:if="{{avatarUrl && nickName}}">
       <image src="{{avatarUrl}}" />
     </view>
-     <view class='userName' wx:if="{{avatarUrl && nickName}}">{{nickName}}</view>
+    <view class='userName' wx:if="{{avatarUrl && nickName}}">{{nickName}}</view>
   </view>
-  
+
   <view class='ueserAction'>
     <view class='userAbout'>
-      <image src="images/image.png"></image>
-      <view class="about">关于我们</view>
-    </view>
-    <view class='userBooks'>
-      <view class="num">{{ Count }}</view>
-      <text class="bookes">我的书单</text>
+      <view class='userAbout' bindtap='about'>
+        <image src="images/image.png"></image>
+        <view class="about">关于我们</view>
+      </view>
+      <view class='userBooks'>
+        <view class="num">{{ Count }}</view>
+        <text class="bookes">我的书单</text>
+      </view>
     </view>
   </view>
 </view>

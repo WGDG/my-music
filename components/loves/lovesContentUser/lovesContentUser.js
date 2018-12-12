@@ -4,8 +4,8 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    Count:{
-      type:Number
+    Count: {
+      type: Number
     }
 
   },
@@ -23,11 +23,17 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onGotUserInfo(e){
+    onGotUserInfo(e) {
       let { avatarUrl, nickName } = e.detail.userInfo
       this.setData({
         avatarUrl: avatarUrl,
         nickName: nickName
+      })
+    },
+    about() {
+      console.log(12)
+      wx.navigateTo({
+        url: '../like/like',
       })
     }
   }

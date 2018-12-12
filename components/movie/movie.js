@@ -23,6 +23,7 @@ Component({
     play(ev) {
       console.log(ev)
       let {behavior} = ev.detail
+      
       console.log(behavior)
       this.setData({
         behavior: behavior

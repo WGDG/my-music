@@ -5,6 +5,7 @@ let bookesdetail = new BookesDetail()
 import { PingjiaModel } from '../../models/bookes/pingjia/pingjia.js'
 let pingjia = new PingjiaModel()
 
+
 Page({
 
   /**
